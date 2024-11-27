@@ -3,6 +3,7 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ul{
@@ -15,35 +16,49 @@ a{
 
 body {
   color: #333;
-  font-family: 'SoDoSans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: normal;
   line-height: 1.4;
   
 }
 
 /* ESTILO NAV-BAR */
-nav .blackf{
-  background-color: #1e3932; 
+header{
+  background-color: #1e3932;   
+  padding-bottom: 20px;
+}
+
+header .blackf{
   padding: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   cursor: pointer;
 }
 
-nav .blackf h1{
+header .blackf h1{
   color: white;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav .blackf h1:hover{
+header .blackf h1:hover{
   text-decoration: underline #00754a;
 }
 
-nav .navegação{
+nav {
   display: flex;
   justify-content: space-between; 
   align-items: center;
   padding: 10px 20px;
+  transition: 0.4s;
+}
+
+nav:hover{
+  background-color: white;
+}
+
+nav:hover a, 
+nav:hover i,
+nav:hover button{
+  color: #1e3932;
 }
 
 nav ul{
@@ -51,11 +66,39 @@ nav ul{
 }
 
 nav ul li{
-  padding: 10px;
+  padding: 6px 10px;
+  font-size: 19px;
+  font-weight: 400;
 }
 
 nav img{
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  width: 60px;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+}
+
+nav i{
+  color: white;
+  padding: 10px 10px 10px 19px;
+}
+
+nav button {
+  background-color: transparent;
+  border-radius: 18px;
+  padding: 0px 13px;
+  font-size: 15px;
+  border: 1px solid;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+
+#promoções img{ 
+  width: 100%;
 }
